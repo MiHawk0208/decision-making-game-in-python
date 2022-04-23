@@ -1,0 +1,52 @@
+import os
+import input
+import conditions
+
+
+print(" .........Welcome TO Bad Omen.........\n")
+print("\nWARNING!!!!--->Enter only if you are brave enough to face the curse of forest")
+os.system('pause')
+os.system('cls')
+
+gen = input.gender()
+os.system('cls')
+partner = 'partner'
+sex = 'your partner'
+if gen == "BOY":
+    partner = 'wife'
+    sex = 'she'
+if gen == "GIRL":
+    partner = 'husband'
+    sex = 'he'
+
+print("you are a engineer\nyour age is 29")
+print("you design payload system for NASA")
+print(f"you are married and live in a lake house with your {partner}")
+print("it's been 2 year since you are married")
+os.system('pause')
+os.system('cls')
+print('[press 1, 2 or 3 for making any decision]\n')
+print("Time = 8:30 PM\nyou are coming from work in your car")
+print(f"you took shortcut and drive through forest as you wanted to surprise your {partner}")
+print('but your car broke down in the middle of the forest, you came out of car to check engine')
+print('you hear gun fire in the forest and the scream after it')
+print('\n1) run in another direction in forest')
+print('2) try calling')
+print('3) follow the sound\n')
+call = 1
+dis = 0
+while dis == 0 or 2:
+    dis = input.inp()
+    if dis == 2:
+        print('no signal found')
+    if dis == 1:
+        os.system('cls')
+        conditions.sca1(partner, sex)
+    elif dis == 3:
+        print("you sneak inside the forest and saw 3 men and a dead body, you step on a twig and they saw you")
+        print('they point there gun at you and you raise both hand in air')
+        os.system('pause')
+        os.system('cls')
+        conditions.scb1(partner, sex)
+print('hello')...
+input("its a text file opened in pycharm, i cant believe it,"
