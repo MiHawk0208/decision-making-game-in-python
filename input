@@ -1,0 +1,28 @@
+def gender():
+    while True:
+        try:
+            gen = (input("are you a girl or boy\n").upper())
+            if gen == "GIRL" or gen == "BOY":
+                return gen
+            else:
+                print("!!!Type girl or boy\n")
+        except ValueError:
+            print("!!!Type girl or boy\n")
+
+
+
+def inp():
+    while True:
+        try:
+            choice = int(input("what will you do "))
+            if 4 > choice > 0:
+                return choice
+            else:
+                print("enter 1, 2 or 3")
+        except ValueError:
+            print("enter numerical value!!!")
+
+
+def answer():
+    ans = input()
+    return ans
