@@ -1,0 +1,219 @@
+import input
+import os
+import sys
+
+
+def sca1(partner, sex):
+    print("you hear the sound of footsteps of 2 people getting closer")
+    print("you found entrance of a tunnel, it dark inside")
+    print('\n1) you run further into forest')
+    print('2) you went inside the tunnel')
+    print('3) hide inside the nearby brush')
+    dis = input.inp()
+    if dis == 1:
+        print('you run further into forest but you tripped and fall.')
+        print('you get unconscious and when you wakeup , it was too late')
+        print('you were dragged into the tunnel')
+        os.system('pause')
+        os.system('cls')
+        scb1(partner, sex)
+    elif dis == 2:
+        os.system('cls')
+        sca2(partner, sex, 10)
+    elif dis == 3:
+        print('you hide inside the bush')
+        print('one come and ran further into the forest')
+        print('you hear sound of gunfire and busting tire of your car')
+        while True:
+            print('1) you stay hidden and wait')
+            print('2) you run into the tunnel')
+            dis = input.inp()
+            if dis == 1:
+                print('another man come from behind and point hig gun at you')
+                print('you raise your hand in air')
+                os.system('pause')
+                os.system('cls')
+                scb1(partner, sex)
+            elif dis == 2:
+                os.system('cls')
+                sca2(partner, sex, 10)
+            elif dis == 3:
+                print("enter 1 or 2")
+                os.system('pause')
+                os.system('cls')
+
+
+def sca2(partner, sex, pod):
+    if pod != 20:
+        print('you went inside the tunnel')
+        print('it was a long tunnel which reach to a storage room of a big underground structure')
+    print('from this point there wan no turning back')
+    print('you go out of the storage room and found yourself inside a asylum')
+    print('it was a underground asylum, there were people in cells,screaming and banging their heads against the wall')
+    print('there was stairs going further down the asylum')
+    print('one cells gate broke down and 3 psycho came out of the cell')
+    print('\n1) you run back to storage room')
+    print('2) tackle them and run ahead')
+    print('3) go further down the asylum')
+    dis = input.inp()
+    if dis == 1:
+        print("you were running back to the storage and 2 men come out of the storage and shoot psychos down ")
+        print('they point there gun at you')
+        os.system('pause')
+        os.system('cls')
+        scb2(partner, sex)
+    elif dis == 2:
+        print("you knock one psycho to ground, another 2 grab you, push you to ground and   EAT YOU ALIVE")
+        os.system('pause')
+        sys.exit()
+    elif dis == 3:
+        os.system('cls')
+        sca3(partner, sex)
+
+
+def scb1(partner, sex):
+    print("you got captured by those men and they take you inside a tunnel on the other side of the forest")
+    print('you find yourself inside a storage room with your one hand cuffed from the wall')
+    print("there is a shelf near you")
+    print("\n1) you do nothing")
+    print('2) you kick the shelf')
+    dis = input.inp()
+    if dis == 1:
+        print("after a hour , those men came back and drag you out of the storage room")
+        print(' found yourself inside a asylum')
+        print('it was a underground asylum, there were people in cells,screaming and banging heads against the wall')
+        print('there was stairs going further down the asylum')
+        os.system('pause')
+        os.system('cls')
+        scb2(partner, sex)
+    if dis == 2:
+        os.system('cls')
+        print('you kick the shelf and a saw drop from the shelf')
+        print('but it also create sound and you hear footstep approaching')
+        print('\n1) cut the chain')
+        print('2) cut your hand')
+        print('3) do nothing')
+        while True:
+            dis = input.inp()
+            if dis == 1:
+                print("saw is not sharp enough")
+            elif dis == 2:
+                print('you put the sow on your wrist and cut it.')
+                print('you cried hard and ran for your life ')
+                pod = 20
+                os.system('pause')
+                os.system('cls')
+                sca2(partner, sex, pod)
+            elif dis == 3:
+                print("those men came back and drag you out of the storage room")
+                print(' found yourself inside a asylum')
+                print('it was a underground asylum')
+                print('there were people in cells,screaming and banging heads against the wall')
+                print('there was stairs going further down the asylum')
+                os.system('pause')
+                os.system('cls')
+                scb2(partner, sex)
+    if dis == 3:
+        print('enter 1 or 2')
+        os.system('pause')
+        os.system('cls')
+
+
+def scb2(partner, sex):
+    print('they put you one of the cell in the asylum')
+    print('you hear someone moaning under the bed')
+    print('he sneak out of the bed and start laughing')
+    print('he ask...... ')
+    print('The person who built it sold it. The person who bought it never used it.')
+    print('The person who used it never saw it. What is it?')
+    ans = input.answer()
+    if ans == 'coffin':
+        print('he said..ha ha ha ha..... you are a wise men, take this key of the cell and run')
+        print("you unlock the gate with the key and hear someone coming")
+        print("\n1) you go back inside the cell")
+        print("2) you go further down the asylum")
+        dis = input.inp()
+        if dis == 1:
+            print("a women came, open the cell hit you with a bat and you fall unconscious ")
+            os.system('pause')
+            os.system('cls')
+            sc_kill(partner, sex)
+        elif dis == 2:
+            os.system('cls')
+            sca3(partner, sex)
+    else:
+        print('wrong wrong wrong ha ha ha ha.... you will die here ..ha ha ha ha ha ha')
+        print("hours pass , you sit in the cell without food or water")
+        print("a women came, open the cell hit you with a bat and you fall unconscious ")
+        os.system('pause')
+        os.system('cls')
+        sc_kill(partner, sex)
+
+
+def sc_kill(partner, sex):
+    print("when you wakeup , you found yourself tied to a chair")
+    print("you hear someone singing the dark corner of the room ")
+    print('you recognise this voice and you were shocked..')
+    print(f"{sex} came out of dark.... it's your {partner} holding a chainsaw in her hand")
+    print('blood is dripping from that cutter')
+    print(f'{sex}  come near you and said,"hi honey, you come early from the office"')
+    print(f"you start crying... but {sex} still has a ghoul smile on face")
+    print(f'{sex} cut your limb one by one while humming then stab you with pair of scissor and kissed you goodnight')
+    os.system('pause')
+    sys.exit()
+
+
+def sca3(partner, sex):
+    print('you reach further down the basement')
+    print('it is dark down here and you can hear crying of someone')
+    print('a light bulb is flickering in the corner')
+    print('and you see a person tied on a chair, he has blood all over his body')
+    print('his leg has been cutoff....he is crying')
+    os.system('pause')
+    os.system('cls')
+    print("you hear someone singing the dark corner of the room ")
+    print('you recognise this voice and you were shocked..')
+    print(f"{sex} came out of dark.... it's your {partner} holding a chainsaw in her hand")
+    print('blood is dripping from that chainsaw')
+    print(f'{sex} start walking towards you and said,"hi honey you come early from the office"')
+    print('\n1) you ask...,"what happened to you..')
+    print('2) you say, "stop this madness, there is still hope, please come back')
+    print('3) run for your life')
+    dis = input.inp()
+    os.system('cls')
+    if dis == 1 or dis == 2:
+        print(f'{sex} said,"this is my true self.. this is my real world.. come to me love')
+        print(f'{sex} ran towards you, and cut you in half and kissed you goodbye')
+        os.system('pause')
+        sys.exit()
+    else:
+        print('you ran back and run towards the storage room')
+        print('you run towards the storage room... she is behind you')
+        print('the door is locked')
+        print('their is a key on the fire alarm box')
+        print('/n1) open the door of storage room with key')
+        print('2) press the fire alarm')
+        dis = input.inp()
+        os.system('cls')
+        if dis == 1:
+            print(f"grab the key and try to open door but {sex} throw knife on your leg")
+            print(f'{sex} drag you by your hair')
+            print("you were dragged back to the basement and tied you to a chair")
+            print(f"you start crying... but {sex} still has a ghoul smile on face")
+            print(f'{sex} cut your limb one by one while humming')
+            print("('then stab you with pair of scissor and kissed you goodnight')")
+            os.system('pause')
+            sys.exit()
+        elif dis == 2:
+            print('all the cells open')
+            print('people come out of cell and grab her.')
+            print('they stab her with fork, shards of glass or whatever they could found')
+            print('you open the gate and get out of the asylum')
+            print('you run towards the city.... and get waisted on the road')
+            os.system('pause')
+            os.system('cls')
+            print('when you wakeup you found yourself in a hospital. someone sow you on road and take you to hospital')
+            print('your life was saved but your heart and and mind was destroyed forever...')
+            print('THE END')
+            os.system('pause')
+            sys.exit()
